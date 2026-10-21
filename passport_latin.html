@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменяем кириллицу на латиницу по клику</title>
+</head>
+<body>
+<a id="top"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="8" bgcolor="#e4e8dc">
+    <tr>
+        <td rowspan="2" width="50" align="center"><a href="index.html"><img src="images/home.jpg" width="40" border="0" alt="На главную"></a></td>
+        <td><a href="index.html">Главная</a></td>
+        <td><a href="architecture.html">Архитектура</a></td>
+        <td><a href="culture.html">Культура</a></td>
+        <td><a href="language.html">Язык</a></td>
+        <td><a href="walk.html">Прогулка</a></td>
+        <td><a href="gallery.html">Галерея</a></td>
+    </tr>
+    <tr>
+        <td><a href="forms.html">Анкета</a></td>
+        <td><a href="passport.html">DOM</a></td>
+        <td bgcolor="#a44332"><a href="passport_latin.html"><b><font color="#ffffff">Кириллица / латиница</font></b></a></td>
+        <td><a href="task.html">Задача 1009</a></td>
+        <td><a href="architecture.html#compare">Таблица памятников</a></td>
+        <td><a href="https://whc.unesco.org/en/list/600/" target="_blank">ЮНЕСКО: берега Сены</a></td>
+    </tr>
+</table>
+
+<h1>Изменяем кириллицу на латиницу по клику</h1>
+<table background="images/passport_blank.png" width="445" border="0" cellspacing="0" cellpadding="0">
+    <tr><td height="63"></td></tr>
+    <tr>
+        <td height="18" valign="bottom">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="100"></td>
+                    <td><font face="Times New Roman" size="2">МВД РОССИИ</font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr><td height="50"></td></tr>
+    <tr>
+        <td height="18" valign="bottom">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="92"></td>
+                    <td><font face="Times New Roman" size="2">01.01.2020</font></td>
+                    <td width="95"></td>
+                    <td><font face="Times New Roman" size="2">000-000</font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr><td height="189"></td></tr>
+    <tr>
+        <td height="18" valign="bottom">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="190"></td>
+                    <td><font face="Times New Roman" size="2"><span id="surname">ЗУБЦОВ</span></font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr><td height="27"></td></tr>
+    <tr>
+        <td height="18" valign="bottom">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="180"></td>
+                    <td><font face="Times New Roman" size="2"><span id="firstname">МИХАИЛ</span></font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr><td height="4"></td></tr>
+    <tr>
+        <td height="18" valign="bottom">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="190"></td>
+                    <td><font face="Times New Roman" size="2"><span id="otchestvo">АНДРЕЕВИЧ</span></font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr><td height="4"></td></tr>
+    <tr>
+        <td height="18" valign="bottom">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="175"></td>
+                    <td><font face="Times New Roman" size="2">МУЖ.</font></td>
+                    <td width="75"></td>
+                    <td><font face="Times New Roman" size="2">01.01.<span id="birthyear">2000</span></font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr><td height="5"></td></tr>
+    <tr>
+        <td height="18" valign="bottom">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="190"></td>
+                    <td><font face="Times New Roman" size="2">РОССИЯ</font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr><td height="152"></td></tr>
+</table>
+<p>
+    <button id="change">Заменить на латиницу</button>
+    <button id="restore">Вернуть кириллицу</button>
+</p>
+<p><a href="passport.html">Вернуться к чтению DOM</a></p>
+<h2 id="commands"><font color="#a44332">Команды для консоли разработчика</font></h2>
+<pre>
+document.getElementById("surname").innerText
+document.getElementById("firstname").innerText
+document.getElementById("otchestvo").innerText
+document.getElementById("birthyear").innerText
+</pre>
+<hr color="#e4e8dc" size="2">
+<p><a href="#top">К началу страницы</a></p>
+<script src="js/change.js"></script>
+</body>
+</html>

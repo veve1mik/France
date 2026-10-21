@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение алгоритмической задачи</title>
+</head>
+<body>
+
+<a id="top"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="8" bgcolor="#e4e8dc">
+    <tr>
+        <td rowspan="2" width="50" align="center"><a href="index.html"><img src="images/home.jpg" width="40" border="0" alt="На главную"></a></td>
+        <td><a href="index.html">Главная</a></td>
+        <td><a href="architecture.html">Архитектура</a></td>
+        <td><a href="culture.html">Культура</a></td>
+        <td><a href="language.html">Язык</a></td>
+        <td><a href="walk.html">Прогулка</a></td>
+        <td><a href="gallery.html">Галерея</a></td>
+    </tr>
+    <tr>
+        <td><a href="forms.html">Анкета</a></td>
+        <td><a href="passport.html">DOM</a></td>
+        <td><a href="passport_latin.html">Кириллица / латиница</a></td>
+        <td bgcolor="#a44332"><a href="task.html"><b><font color="#ffffff">Задача 1009</font></b></a></td>
+        <td><a href="architecture.html#compare">Таблица памятников</a></td>
+        <td><a href="https://whc.unesco.org/en/list/600/" target="_blank">ЮНЕСКО: берега Сены</a></td>
+    </tr>
+</table>
+
+<h1>Решение алгоритмической задачи</h1>
+
+<h2 id="condition"><font color="#a44332">Задача № 1009</font></h2>
+<p name="formulation">Даны вещественные числа: X, Y, Z. Определить, существует ли треугольник с такими длинами сторон и, если существует, будет ли он прямоугольным.</p>
+
+<h2 id="solution"><font color="#a44332">Введите длины сторон</font></h2>
+
+<form action="https://httpbin.org/post" method="post" target="_blank" id="UserEnter" name="UserEnter">
+    <input type="hidden" name="task_number" value="1009">
+    <ul>
+        <li>Формулировка задачи:<br>
+            <textarea cols="60" rows="4" id="task" name="formulation">Даны вещественные числа: X, Y, Z. Определить, существует ли треугольник с такими длинами сторон и, если существует, будет ли он прямоугольным.</textarea></li>
+        <li>X: <input id="x" name="x" type="number" step="any" value="3"></li>
+        <li>Y: <input id="y" name="y" type="number" step="any" value="4"></li>
+        <li>Z: <input id="z" name="z" type="number" step="any" value="5"></li>
+        <li>Результат решения задачи:<br>
+            <textarea cols="60" rows="2" id="result" name="result">не определён</textarea></li>
+        <li>действие 1: <input id="verify" type="button" value="Решить"></li>
+        <li>действие 2: <input id="send" type="button" value="Отправить на сервер"></li>
+    </ul>
+</form>
+
+
+<hr color="#e4e8dc" size="2">
+<p><a href="#top">К началу страницы</a></p>
+<script src="js/task.js"></script>
+</body>
+</html>
